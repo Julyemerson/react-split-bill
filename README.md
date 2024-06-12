@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Eat-'N-Split
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Eat and split image](/public/eat-image.png "eat and split app")
 
-## Available Scripts
+Eat-'N-Split is a React application that allows users to manage and split bills among friends.
 
-In the project directory, you can run:
+## Structure
 
-### `npm start`
+The application is structured into several components, each responsible for a specific functionality:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [`App`](src/App.jsx): This is the main component of the application. It manages the state of the application and handles the logic for adding friends and splitting bills.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [`Button`](src/components/Button.jsx): A reusable button component.
 
-### `npm test`
+- [`FormAddFriend`](src/components/FormAddFriend.jsx): A form that allows users to add a new friend. It takes a callback function `onAddFriend` as a prop, which is called with the new friend's information when the form is submitted.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [`FormSplitBill`](src/components/FormSplitBill.jsx): A form that allows users to split a bill with a selected friend.
 
-### `npm run build`
+- [`Friend`](src/components/Friend.jsx): A component that represents a friend.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [`FriendList`](src/components/FriendList.jsx): A component that displays a list of friends.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the application, use the `npm start`. This will start the application in development mode and open it in your default web browser.
 
-### `npm run eject`
+## Building the Application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To build the application for production, use the `npm run build` command. This will create a production-ready build in the `build` folder.
